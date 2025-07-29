@@ -1,5 +1,4 @@
 
-
 h1{
   text-align: center;
 }
@@ -11,7 +10,7 @@ h1{
   margin-inline: auto;
   border: 1px solid slateblue;
   padding: 2rem;
-  /* display: none; */
+  margin-top: 100px;
 }
 
 input{
