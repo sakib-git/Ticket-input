@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div class="container">
+   <h1>Ticket Machine</h1>
+   <label for="name">Name</label>
+   <input type="text" id="name" class="allinput" placeholder="Enter Your Name">
+
+   <label for="age">Age</label>
+   <input type="number" id="age" class="allinput"  placeholder="Enter Your Age">
+
+   <label for="number">Number</label>
+   <input type="number" id="number" class="allinput"  placeholder="Enter Your Number">
+
+   <label for="Money">Money</label>
+   
+   <input type="number" id="Money" class="allinput"  placeholder="Enter Money">
+   <button id="btn">Print</button>
+ </div>
+ <div id="result">
+  <h2> Your Ticket</h2>
+<div class="name-age">
+  <h4> Name : <span id="nameresult"></span></h4>
+   <h4>Age : <span id="ageresult"></span></h4>
+</div>
+<h4>Number :  <span id="numberresult"></span></h4>
+ <h4>Money : <span id="moneyresult"></span></h4>
+  <h4>Title : <span id="title"></span></h4>
+  
+ </div>
+  <script src="app.js"></script>
+</body>
+</html>
