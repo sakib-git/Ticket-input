@@ -27,8 +27,8 @@ btn.addEventListener('click', () => {
 
 
 if (moneyvalue < 550) {
-    moneyresult.innerText = 'please paid 550';
-    title.innerText = 'something wrong'
+    moneyresult.innerText = 'Please pay 550';
+    title.innerText = 'Something wrong'
 }
   else if(agevalue <= 12 ){
     moneyresult.innerText = 'free'
@@ -38,13 +38,13 @@ if (moneyvalue < 550) {
       const discount = moneyvalue * 30 / 100
       const total = moneyvalue - discount
       moneyresult.innerText = `${total} tk`;
-      title.innerText = 'you are a student for 30 percent discount'
+      title.innerText = 'you are a student, you got 30%  discount'
   }
   else if(agevalue >= 65 ){
     const discount = moneyvalue * 15 / 100;
     const total = moneyvalue - discount;
     moneyresult.innerText = total;
-    title.innerText = 'you are an old citizen for 15 percent discount'
+    title.innerText = 'You are an old citizen, you got 15% discount'
   }
   
   else {
