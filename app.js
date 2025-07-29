@@ -26,18 +26,21 @@ btn.addEventListener('click', () => {
   moneyresult.innerText = moneyvalue;
 
 
-
-  if(agevalue <= 12 ){
+if (moneyvalue < 550) {
+    moneyresult.innerText = 'please paid 550';
+    title.innerText = 'something wrong'
+}
+  else if(agevalue <= 12 ){
     moneyresult.innerText = 'free'
     title.innerText = 'you are Underage'
   }
-  else if(agevalue >= 12 && agevalue <= 30){
+  else if(agevalue >= 12 && agevalue <= 30 ){
       const discount = moneyvalue * 30 / 100
       const total = moneyvalue - discount
       moneyresult.innerText = `${total} tk`;
       title.innerText = 'you are a student for 30 percent discount'
   }
-  else if(agevalue >= 65){
+  else if(agevalue >= 65 ){
     const discount = moneyvalue * 15 / 100;
     const total = moneyvalue - discount;
     moneyresult.innerText = total;
@@ -59,13 +62,13 @@ btn.addEventListener('click', () => {
     if(i.value == ''){
     i.classList.add('show')
        allFilled = false;
-  }
+  } 
   
-    if (i.value !== '') //or if(allFiled)
+    if (allFilled) //or if(i.value !== '')
      {
     container.style.display = 'none';
     result.style.display = 'block';
-  }
+  } 
 
 })
 
@@ -88,18 +91,14 @@ number.addEventListener('keyup', () => {
 
 })
  
-
-
-
-  if(!allinput.value == ''){
-    container.style.display = 'none'
-    result.style.display = 'block'
-  }
-   
-    
+  
 })
 
 
+const getAnotherBtn = document.getElementById('get-another-btn')
+const container = document.querySelector('.container')
 
-
-
+getAnotherBtn.addEventListener('click', () => {
+  result.style.display = 'none'
+  container.style.display = 'flex'
+})

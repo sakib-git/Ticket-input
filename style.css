@@ -19,6 +19,10 @@ input{
   outline: none;
   border: 1px solid skyblue;
 }
+
+input:focus{
+  background-color: #e8f0fe;
+}
 button{
   padding: .7rem 1rem;
   outline: none;
@@ -34,7 +38,6 @@ button{
   margin-inline: auto;
   background-color: #60b5e8;
   box-shadow: 7px 12px 5px rgba(0, 0, 0, 0.123);
-
   margin-top: 100px;
   display: none;
 }
@@ -54,6 +57,12 @@ h4{
   font-size: clamp(0.6rem, 0.0667rem + 2.1333vw, 1rem);
   /* background-color: white; */
   padding: .5rem;
+}
+
+#get-another-btn{
+background-color: black;
+color: white;
+border-radius: 4px;
 }
 
 .show{
